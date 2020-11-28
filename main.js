@@ -1,14 +1,28 @@
 const menuBtn = document.querySelector('#main-menu-btn');
+const openMenu = document.querySelector('body');
+const xsScreen = matchMedia("(max-width: 576px)");
 let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
-    if (!menuOpen)
-    {
-        menuBtn.classList.add('humburger-open');
+    menuBtn.classList.toggle('humburger-open');
+    openMenu.classList.toggle('open-menu');
+    document.querySelector('.logo').style.display = "none";
+    document.querySelector('#welcome').style.display = "none";
+    // document.querySelector('.logo').style.backgroundColor = "rgba(255, 0, 0, 0)";
     }
-    else
+)
+
+xsScreen.addEventListener('change', () => {
+    console.log(xsScreen.matches)
+    if (xsScreen.matches)
     {
-        menuBtn.classList.remove('humburger-open');
+        document.querySelector('#welcome').innerHTML = "WELCOME";
+        // document.querySelector('#welcome').style.color = "blue";
+        // matchedXsScreen.classList
+    }
+    else 
+    {
+        document.querySelector('#welcome').innerHTML = "WELCOME TO MY WEBSITE";
     }
 })
 
