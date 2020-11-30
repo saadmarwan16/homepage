@@ -1,30 +1,30 @@
 const menuBtn = document.querySelector('#main-menu-btn');
-const openMenu = document.querySelector('body');
-const xsScreen = matchMedia("(max-width: 576px)");
-let menuOpen = false;
+// const xsScreen = matchMedia("(max-width: 576px)");
+// const openMenu = document.querySelector('body');
+// let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('humburger-open');
-    openMenu.classList.toggle('open-menu');
-    document.querySelector('.logo').style.display = "none";
-    document.querySelector('#welcome').style.display = "none";
+    // openMenu.classList.toggle('open-menu');
+    // document.querySelector('.logo').style.display = "none";
+    // document.querySelector('#welcome').style.display = "none";
     // document.querySelector('.logo').style.backgroundColor = "rgba(255, 0, 0, 0)";
     }
 )
 
-xsScreen.addEventListener('change', () => {
-    console.log(xsScreen.matches)
-    if (xsScreen.matches)
-    {
-        document.querySelector('#welcome').innerHTML = "WELCOME";
-        // document.querySelector('#welcome').style.color = "blue";
-        // matchedXsScreen.classList
-    }
-    else 
-    {
-        document.querySelector('#welcome').innerHTML = "WELCOME TO MY WEBSITE";
-    }
-})
+// xsScreen.addEventListener('change', () => {
+//     console.log(xsScreen.matches)
+//     if (xsScreen.matches)
+//     {
+//         document.querySelector('#welcome').innerHTML = "WELCOME";
+//         // document.querySelector('#welcome').style.color = "blue";
+//         // matchedXsScreen.classList
+//     }
+//     else 
+//     {
+//         document.querySelector('#welcome').innerHTML = "WELCOME TO MY WEBSITE";
+//     }
+// })
 
 // const menuBtn = document.querySelector('.main-menu-btn');
 // const mainNav = document.querySelector('.mainNav');
